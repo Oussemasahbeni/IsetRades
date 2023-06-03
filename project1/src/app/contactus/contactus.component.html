@@ -1,0 +1,114 @@
+<section class="contact-page-section">
+    <div class="container">
+        <div class="sec-title">
+            <div class="title">Contact Us</div>
+            <h2>Let's Get in Touch.</h2>
+        </div>
+        <div class="inner-container">
+            <div class="row clearfix">
+
+                <!--Form Column-->
+                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+
+                        <!--Contact Form-->
+                        <div class="contact-form">
+                            <form [formGroup]="form" id="contact-form">
+                                <div class="row clearfix">
+                                    <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                        <input type="text" [class.is-invalid]="name.invalid 
+                                        && (name.touched || name.dirty)" name="name" value="" placeholder="Name"
+                                            formControlName="name" required>
+                                        <div *ngIf="name.errors?.minlength" class="error-message">
+                                            Name should be at least 3 characters long.
+                                        </div>
+                                        <div *ngIf="name.errors?.required" class="error-message">
+                                            Name is required.
+                                        </div>
+                                        <div *ngIf="name.errors?.pattern" class="error-message">
+                                            Please enter a valid name.
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                        <input type="email" name="email" value="" placeholder="Email"
+                                            formControlName="email" required>
+                                        <div *ngIf="email.errors?.required" class="error-message">
+                                            Email is required.
+                                        </div>
+                                        <div *ngIf="email.errors?.pattern" class="error-message">
+                                            Please enter a valid email address.
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                        <input type="text" name="subject" value="" placeholder="Subject"
+                                            formControlName="subject" required>
+                                        <div *ngIf="subject.errors?.required" class="error-message">
+                                            Subject is required.
+                                        </div>
+                                        <div *ngIf="subject.errors?.minlength" class="error-message">
+                                            Subject should be at least 3 characters long.
+                                        </div>
+                                        <div *ngIf="subject.errors?.pattern" class="error-message">
+                                            Please enter a valid subject.
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                        <input type="text" name="phone" value="" placeholder="Phone"
+                                            formControlName="phone" required>
+                                        <div *ngIf="phone.errors?.required" class="error-message">
+                                            Phone number is required.
+                                        </div>
+                                        <div *ngIf="phone.errors?.minlength" class="error-message">
+                                            Tunisian Phone numbers are consisted of 8 numbers (exp:+216 71234567).
+                                        </div>
+                                        <div *ngIf="phone.errors?.pattern" class="error-message">
+                                            Please enter a valid phone number.
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                        <textarea name="message" placeholder="Message" formControlName="text"
+                                            required></textarea>
+                                        <div *ngIf="text.errors?.required" class="error-message">
+                                            Message is required.
+                                        </div>
+                                        <div *ngIf="text.errors?.pattern" class="error-message">
+                                            Please enter a message between 1 and 500 characters.
+                                        </div>
+                                        <div *ngIf="text.errors?.maxlength" class="error-message">
+                                            text should be 500 characters maximum.
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                        <button type="submit" class="theme-btn btn-style-one"
+                                            [disabled]="!form.valid || isFormSubmitted" (click)="onsubmit()">Send
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End Contact Form-->
+
+                    </div>
+                </div>
+
+                <!--Info Column-->
+                <div class="info-column col-md-4 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+                        <h2>Contact Info</h2>
+                        <ul class="list-info">
+                            <li><i class="fas fa-globe"></i> L' ISET de Radès, Av. de France, Radès</li>
+                            <li><i class="far fa-envelope"></i>directeuri7rades@gmail.com</li>
+                            <li><i class="fas fa-phone"></i>71 460 100 <br> 71 460 100</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.4277656915!2d10.267730751129074!3d36.76030427754522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd49fa15643927%3A0xad64c8c462b52435!2sHigher%20Institute%20of%20Technological%20Studies%20of%20Rades!5e0!3m2!1sen!2stn!4v1681175341474!5m2!1sen!2stn"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>

@@ -1,0 +1,264 @@
+.dropdown-menu .projects-dropdown {
+    display: none;
+    position: absolute;
+    top: -2%;
+    left: 100%;
+    min-width: 200px;
+    background-color: white;
+    
+    border-radius: 0px;
+   
+}
+
+.dropdown-menu .dropdown-item:hover .projects-dropdown {
+    display: block;
+}
+ul {
+    list-style-type: none;
+  }
+
+  /* navbar */
+.header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.header.scrolled
+{
+	top: -60px;
+}
+
+
+.logo-iset{
+    width:9%;
+    position: relative;
+    left:-3%;
+    
+}
+
+
+.desc{
+  display: flex;
+   flex-direction: column;
+   left:-4%;
+     position: relative; 
+     font-family: 'Times New Roman', Times, serif; 
+     font-weight: bolder;
+     font-size: 15px;
+     text-transform: uppercase;
+}
+
+.div1{
+  display: inline-block;
+}
+
+.dropdown-menu {
+  border-radius: 0px;
+  padding: 0;
+  border: none;
+  margin-left: 5%;
+  margin-top: -90%;
+  
+}
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  -webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+
+}
+.header.scrolled .navbar
+{
+	height: 100px;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.nav-item {
+  position: relative; 
+  left:-2%;
+  top:6%;
+}
+
+.nav-link {
+  color: #1e4daa;
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  
+}
+
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.hover .nav-link {
+  color: #14bdee;
+  
+
+}
+
+.dropdown-menu a {
+  color: #060000;
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+/*.dropdown-menu a:hover {
+  background-color: #0cc8ea;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+  border-radius: 0%;
+} */
+
+.dropdown-item {
+  position: relative;
+  z-index: 1;
+  border-radius: 0px;
+  border: 1px solid #1abdee;
+  padding: 0%;
+}
+.dropdown-item span {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-item:active {
+  background-color: transparent;
+}
+.dropdown-item span::after {
+  content: '';
+  position: absolute;
+  color: #FFFFFF;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff0000; /* Change this to the color you want for the underline */
+  visibility: hidden;
+  transform: scaleX(0);
+  margin-bottom: -5px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.dropdown-item .projects_span::after {
+    visibility: hidden !important;
+
+}
+
+.dropdown-item:hover span::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.bg-dark-blue {
+    background-color: rgb(246, 245, 245); /* Change the color code to the shade of dark blue you want */
+    
+  }
+  span{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*********************************
+3.1 Top Bar
+*********************************/
+
+.top_bar
+{ 
+	width: 100%;
+  height: max-content;
+	background: #14bdee;
+  
+    
+}
+.top_bar_content img.logo-minestry {
+  height: 40px;
+  margin-right: 10px;
+  position: relative;
+  left: -20%;
+  
+}
+.top_bar_content .spantop span {
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  color: white;
+  position: relative;
+  left:-77%;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: solid;
+  
+}
+.top_bar_container
+{
+	width: 100%;
+	height: 100%;
+}
+.top_bar_content
+{
+	width: 100%;
+	height: 60px;
+}
+.top_bar_contact_list li
+{
+	display: inline-block;
+  position: relative;
+  left: 270%;
+}
+
+.top_bar_contact_list li i,
+.top_bar_contact_list li > div
+{
+	display: inline-block;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.top_bar_contact_list li > div
+{
+	margin-left: 1px;
+}
+.top_bar_contact_list li:not(:last-child)
+{
+	margin-right: 21px;
+}

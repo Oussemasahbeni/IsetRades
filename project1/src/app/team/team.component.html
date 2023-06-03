@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="row1">
+            <div class="col-md-12">
+                <div class="site-heading text-center">
+                    <h2>Our <span>Team</span></h2>
+                    <h4>Meet our awesome and expert team members</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let r of result">
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid"
+                        src="https://media.licdn.com/dms/image/C4E03AQF1-9rbh13CWg/profile-displayphoto-shrink_800_800/0/1659451874257?e=2147483647&v=beta&t=U-3_KmU6IHvBrL3v2FF5yOK3fWXg0r7pyfxUVdTDwx4">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">{{r.name}}</h3>
+                    <h4 class="title">{{r.position}}</h4>
+                </div>
+                <ul class="social">
+                    <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a>
+                    </li>
+                    <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a>
+                    </li>
+                    <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus"
+                            aria-hidden="true"></a></li>
+                    <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
